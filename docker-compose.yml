@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: .
+    container_name: hng13-nginx
+    ports:
+      - "80:80"    # Map container's port 80 to your host port 80
+    restart: unless-stopped
